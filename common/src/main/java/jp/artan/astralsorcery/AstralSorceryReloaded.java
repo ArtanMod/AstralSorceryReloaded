@@ -9,9 +9,9 @@ public final class AstralSorceryReloaded {
     public static final String MOD_ID = "astralsorcery";
 
     public static void init() {
+        ASCreativeTab.register();
         ASBlocks.register();
         ASItems.register();
-        ASCreativeTab.register();
     }
 
     public static void initClient() {
