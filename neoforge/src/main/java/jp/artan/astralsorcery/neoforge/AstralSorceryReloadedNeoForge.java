@@ -42,7 +42,7 @@ public final class AstralSorceryReloadedNeoForge {
         generator.addProvider(event.includeClient(), new ModItemModelProvider(output, AstralSorceryReloaded.MOD_ID, existingFileHelper));
 
         // LootTable
-        //generator.addProvider(event.includeServer(), new ModLootTableProvider(output, AstralSorceryReloaded.MOD_ID));
+        generator.addProvider(event.includeServer(), new ModLootTableProvider(output, lookupProvider));
 
         // Lang
         generator.addProvider(event.includeClient(), new ModUDLanguageProvider(output, AstralSorceryReloaded.MOD_ID));
