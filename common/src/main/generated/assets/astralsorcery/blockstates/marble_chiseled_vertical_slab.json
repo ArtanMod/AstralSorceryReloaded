@@ -1,0 +1,42 @@
+{
+  "variants": {
+    "facing=east,vertical_slab_type=double": {
+      "model": "astralsorcery:block/marble_chiseled",
+      "uvlock": true,
+      "y": 90
+    },
+    "facing=east,vertical_slab_type=half": {
+      "model": "astralsorcery:block/marble_chiseled_vertical_slab_half",
+      "uvlock": true,
+      "y": 90
+    },
+    "facing=north,vertical_slab_type=double": {
+      "model": "astralsorcery:block/marble_chiseled",
+      "uvlock": true
+    },
+    "facing=north,vertical_slab_type=half": {
+      "model": "astralsorcery:block/marble_chiseled_vertical_slab_half",
+      "uvlock": true
+    },
+    "facing=south,vertical_slab_type=double": {
+      "model": "astralsorcery:block/marble_chiseled",
+      "uvlock": true,
+      "y": 180
+    },
+    "facing=south,vertical_slab_type=half": {
+      "model": "astralsorcery:block/marble_chiseled_vertical_slab_half",
+      "uvlock": true,
+      "y": 180
+    },
+    "facing=west,vertical_slab_type=double": {
+      "model": "astralsorcery:block/marble_chiseled",
+      "uvlock": true,
+      "y": 270
+    },
+    "facing=west,vertical_slab_type=half": {
+      "model": "astralsorcery:block/marble_chiseled_vertical_slab_half",
+      "uvlock": true,
+      "y": 270
+    }
+  }
+}

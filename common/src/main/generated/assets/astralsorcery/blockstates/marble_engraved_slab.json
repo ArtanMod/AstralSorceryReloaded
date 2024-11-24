@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "astralsorcery:block/marble_engraved_slab_bottom"
+    },
+    "type=double": {
+      "model": "astralsorcery:block/marble_engraved"
+    },
+    "type=top": {
+      "model": "astralsorcery:block/marble_engraved_slab_top"
+    }
+  }
+}

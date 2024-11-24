@@ -1,5 +1,10 @@
 {
   "values": [
-    "astralsorcery:marble_stairs"
+    "astralsorcery:marble_stairs",
+    "astralsorcery:marble_arch_stairs",
+    "astralsorcery:marble_bricks_stairs",
+    "astralsorcery:marble_chiseled_stairs",
+    "astralsorcery:marble_engraved_stairs",
+    "astralsorcery:marble_runed_stairs"
   ]
 }

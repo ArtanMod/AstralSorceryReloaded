@@ -1,5 +1,10 @@
 {
   "values": [
-    "astralsorcery:marble_slab"
+    "astralsorcery:marble_slab",
+    "astralsorcery:marble_arch_slab",
+    "astralsorcery:marble_bricks_slab",
+    "astralsorcery:marble_chiseled_slab",
+    "astralsorcery:marble_engraved_slab",
+    "astralsorcery:marble_runed_slab"
   ]
 }

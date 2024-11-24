@@ -1,7 +1,7 @@
-// 1.21.3	2024-11-24T16:05:24.0313356	Tags for minecraft:block mod id astralsorcery
-ddd55dc2679a90aabb87d1d42d65880bb7c41c19 data/c/tags/block/tile.json
-2ad02df10b82b45f186ee58c9244923d72a8d48d data/c/tags/block/vertical_slab.json
-aee1d6874a860d252554f9aa09ca7e158a43c59e data/minecraft/tags/block/mineable/pickaxe.json
-52046811e08b0691d9881fe4e88d476f8f165bf3 data/minecraft/tags/block/slabs.json
-1dd00ab929d02a91853956b8fc9c2c1fae6d896e data/minecraft/tags/block/stairs.json
-ddab3add599e594af1069f58341b2b5dfe962b57 data/minecraft/tags/block/walls.json
+// 1.21.3	2024-11-24T17:47:25.5595437	Tags for minecraft:block mod id astralsorcery
+963c4e17763f47fd0b4f1a6d3fc9d9e509acd9b0 data/c/tags/block/tile.json
+daf786478de53649e6bf6ae67581cfb72c4bcfda data/c/tags/block/vertical_slab.json
+1bb30c6d77ec1d2df8fe5086606bede856fad950 data/minecraft/tags/block/mineable/pickaxe.json
+59880e2f1168b3c2e889ed347f2f73116715fc39 data/minecraft/tags/block/slabs.json
+e242ce4c131a17ae07229e41f3cd9c12eccd7b63 data/minecraft/tags/block/stairs.json
+9fe63a8270406b79ed3fa8c718ab0aa02868e259 data/minecraft/tags/block/walls.json

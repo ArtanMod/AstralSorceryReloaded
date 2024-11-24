@@ -19,8 +19,20 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider arg) {
-        this.tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ASBlocks.MARBLE.get());
+        this.tag(BlockTags.MINEABLE_WITH_PICKAXE).add(
+                ASBlocks.MARBLE.get(),
+                ASBlocks.MARBLE_ARCH.get(),
+                ASBlocks.MARBLE_BRICKS.get(),
+                ASBlocks.MARBLE_CHISELED.get(),
+                ASBlocks.MARBLE_ENGRAVED.get(),
+                ASBlocks.MARBLE_RUNED.get()
+        );
         this.addStoneDecoration(ASBlocks.MARBLE_DECORATION);
+        this.addStoneDecoration(ASBlocks.MARBLE_ARCH_DECORATION);
+        this.addStoneDecoration(ASBlocks.MARBLE_BRICKS_DECORATION);
+        this.addStoneDecoration(ASBlocks.MARBLE_CHISELED_DECORATION);
+        this.addStoneDecoration(ASBlocks.MARBLE_ENGRAVED_DECORATION);
+        this.addStoneDecoration(ASBlocks.MARBLE_RUNED_DECORATION);
     }
 
     protected void addStoneDecoration(StoneDecoration decoration) {

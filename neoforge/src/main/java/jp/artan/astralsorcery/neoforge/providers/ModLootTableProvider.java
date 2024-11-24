@@ -60,7 +60,17 @@ public class ModLootTableProvider extends LootTableProvider {
         @Override
         protected void generate() {
             this.dropSelf(ASBlocks.MARBLE.get());
+            this.dropSelf(ASBlocks.MARBLE_ARCH.get());
+            this.dropSelf(ASBlocks.MARBLE_BRICKS.get());
+            this.dropSelf(ASBlocks.MARBLE_CHISELED.get());
+            this.dropSelf(ASBlocks.MARBLE_ENGRAVED.get());
+            this.dropSelf(ASBlocks.MARBLE_RUNED.get());
             this.dropStoneDecoration(ASBlocks.MARBLE_DECORATION);
+            this.dropStoneDecoration(ASBlocks.MARBLE_ARCH_DECORATION);
+            this.dropStoneDecoration(ASBlocks.MARBLE_BRICKS_DECORATION);
+            this.dropStoneDecoration(ASBlocks.MARBLE_CHISELED_DECORATION);
+            this.dropStoneDecoration(ASBlocks.MARBLE_ENGRAVED_DECORATION);
+            this.dropStoneDecoration(ASBlocks.MARBLE_RUNED_DECORATION);
         }
 
         protected Iterable<Block> getKnownBlocks() {

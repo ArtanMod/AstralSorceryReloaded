@@ -35,11 +35,47 @@ public class ModBlockModelProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
 
-        // 装飾
-        BlockModelBuilder modelBuilder = this.models().cubeAll(this.getBlockId(ASBlocks.MARBLE), this.modLoc("block/marble"));
-        this.simpleBlock(ASBlocks.MARBLE.get(), modelBuilder);
-        this.simpleBlockItem(ASBlocks.MARBLE.get(), modelBuilder);
+        // 大理石
+        ResourceLocation marbleRL = this.modLoc("block/marble");
+        this.cubeAll(ASBlocks.MARBLE.get(), null);
+        this.cubeAll(ASBlocks.MARBLE_BRICKS.get(), null);
+        this.cubeAll(ASBlocks.MARBLE_CHISELED.get(), null);
+        this.cubeAll(ASBlocks.MARBLE_ENGRAVED.get(), null);
         this.stoneDecoration(ASBlocks.MARBLE_DECORATION, ASBlocks.MARBLE);
+        this.stoneDecoration(ASBlocks.MARBLE_BRICKS_DECORATION, ASBlocks.MARBLE_BRICKS);
+        this.stoneDecoration(ASBlocks.MARBLE_CHISELED_DECORATION, ASBlocks.MARBLE_CHISELED);
+        this.stoneDecoration(ASBlocks.MARBLE_ENGRAVED_DECORATION, ASBlocks.MARBLE_ENGRAVED);
+
+        // 大理石のアーチ
+        ResourceLocation marbleArchRL = this.modLoc("block/marble_arch");
+        BlockModelBuilder marbleArchModel = this.models().cube(this.getBlockId(ASBlocks.MARBLE_ARCH), marbleRL, marbleRL, marbleArchRL, marbleArchRL, marbleArchRL, marbleArchRL)
+                .texture("particle", marbleArchRL);
+        this.simpleBlock(ASBlocks.MARBLE_ARCH.get(), marbleArchModel);
+        this.simpleBlockItem(ASBlocks.MARBLE_ARCH.get(), marbleArchModel);
+        this.stoneDecoration(ASBlocks.MARBLE_ARCH_DECORATION, ASBlocks.MARBLE_ARCH, marbleArchRL, marbleRL);
+
+        // 大理石の柱
+        ResourceLocation marblePillarUpDownRL = this.modLoc("block/marble_pillar_updown");
+
+        // ルーンの彫られた大理石
+        ResourceLocation marbleRunedRL = this.modLoc("block/marble_runed");
+        BlockModelBuilder marbleRunedModel = this.models().cube(this.getBlockId(ASBlocks.MARBLE_RUNED), marblePillarUpDownRL, marblePillarUpDownRL, marbleRunedRL, marbleRunedRL, marbleRunedRL, marbleRunedRL)
+                .texture("particle", marbleRunedRL);
+        this.simpleBlock(ASBlocks.MARBLE_RUNED.get(), marbleRunedModel);
+        this.simpleBlockItem(ASBlocks.MARBLE_RUNED.get(), marbleRunedModel);
+        this.stoneDecoration(ASBlocks.MARBLE_RUNED_DECORATION, ASBlocks.MARBLE_RUNED, marbleRunedRL, marblePillarUpDownRL);
+    }
+
+    protected void cubeAll(Block block, @Nullable String renderType) {
+        String blockId = this.getBlockId(block);
+        ResourceLocation blockTexture = this.blockTexture(block);
+        BlockModelBuilder modelFile = this.models().cubeAll(blockId, blockTexture);
+        if (renderType != null) {
+            modelFile.renderType(renderType);
+        }
+
+        this.simpleBlock(block, modelFile);
+        this.simpleBlockItem(block, modelFile);
     }
 
     protected void slab(SlabBlock block, ResourceLocation baseCubeBlockModel, ResourceLocation side, ResourceLocation top, ResourceLocation bottom, @Nullable String renderType) {
@@ -187,13 +223,21 @@ public class ModBlockModelProvider extends BlockStateProvider {
     protected void stoneDecoration(StoneDecoration decoration, Supplier<? extends Block> resource, @Nullable String renderType) {
         String base = this.getBlockId(resource);
         ResourceLocation all = this.modLoc("block/" + base);
+        stoneDecoration(decoration, resource, all, all, renderType);
+    }
+
+    protected void stoneDecoration(StoneDecoration decoration, Supplier<? extends Block> resource, ResourceLocation sideRL, ResourceLocation upBottomRL) {
+        stoneDecoration(decoration, resource, sideRL, upBottomRL, null);
+    }
+
+    protected void stoneDecoration(StoneDecoration decoration, Supplier<? extends Block> resource, ResourceLocation sideRL, ResourceLocation upBottomRL, @Nullable String renderType) {
         ResourceLocation baseBlockModelFile = this.blockTexture(resource.get());
 
-        this.slab(decoration.slab.get(), baseBlockModelFile, all, all, all, renderType);
-        this.verticalSlab(decoration.verticalSlab.get(), baseBlockModelFile, null, all, all, all, renderType);
-        this.stairs(decoration.stairs.get(), all, all, all, renderType);
-        this.tile(decoration.tile.get(), all, all, all, renderType);
-        this.wall(decoration.wall.get(), all, all, all, renderType);
+        this.slab(decoration.slab.get(), baseBlockModelFile, sideRL, upBottomRL, upBottomRL, renderType);
+        this.verticalSlab(decoration.verticalSlab.get(), baseBlockModelFile, null, sideRL, upBottomRL, upBottomRL, renderType);
+        this.stairs(decoration.stairs.get(), sideRL, upBottomRL, upBottomRL, renderType);
+        this.tile(decoration.tile.get(), sideRL, upBottomRL, upBottomRL, renderType);
+        this.wall(decoration.wall.get(), sideRL, upBottomRL, upBottomRL, renderType);
     }
 
     private String getBlockId(Block block) {

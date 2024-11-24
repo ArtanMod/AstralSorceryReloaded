@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "astralsorcery:block/marble_chiseled_slab_bottom"
+    },
+    "type=double": {
+      "model": "astralsorcery:block/marble_chiseled"
+    },
+    "type=top": {
+      "model": "astralsorcery:block/marble_chiseled_slab_top"
+    }
+  }
+}

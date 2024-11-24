@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "astralsorcery:block/marble_runed_slab_bottom"
+    },
+    "type=double": {
+      "model": "astralsorcery:block/marble_runed"
+    },
+    "type=top": {
+      "model": "astralsorcery:block/marble_runed_slab_top"
+    }
+  }
+}

@@ -34,9 +34,21 @@ public class ASBlocks {
     // Luminous Crafting Table
     //public static final RegistrySupplier<Block> ALTAR_DISCOVERY = register("altar_discovery", () -> new Block(Block.Properties.ofFullCopy(Blocks.DRIED_KELP_BLOCK)), ASCreativeTab.ASTRAL_SORCERY);
 
-    // 装飾ブロック
+    // 大理石
     public static final RegistrySupplier<Block> MARBLE = register("marble", id -> new Block(Block.Properties.ofFullCopy(Blocks.STONE).setId(id)), ASCreativeTab.ASTRAL_SORCERY);
     public static final StoneDecoration MARBLE_DECORATION = registerDecoration("marble", MARBLE, ASCreativeTab.ASTRAL_SORCERY);
+    public static final RegistrySupplier<Block> MARBLE_ARCH = register("marble_arch", id -> new Block(Block.Properties.ofFullCopy(Blocks.STONE).setId(id)), ASCreativeTab.ASTRAL_SORCERY);
+    public static final StoneDecoration MARBLE_ARCH_DECORATION = registerDecoration("marble_arch", MARBLE_ARCH, ASCreativeTab.ASTRAL_SORCERY);
+    public static final RegistrySupplier<Block> MARBLE_BRICKS = register("marble_bricks", id -> new Block(Block.Properties.ofFullCopy(Blocks.STONE).setId(id)), ASCreativeTab.ASTRAL_SORCERY);
+    public static final StoneDecoration MARBLE_BRICKS_DECORATION = registerDecoration("marble_bricks", MARBLE_BRICKS, ASCreativeTab.ASTRAL_SORCERY);
+    public static final RegistrySupplier<Block> MARBLE_CHISELED = register("marble_chiseled", id -> new Block(Block.Properties.ofFullCopy(Blocks.STONE).setId(id)), ASCreativeTab.ASTRAL_SORCERY);
+    public static final StoneDecoration MARBLE_CHISELED_DECORATION = registerDecoration("marble_chiseled", MARBLE_CHISELED, ASCreativeTab.ASTRAL_SORCERY);
+    public static final RegistrySupplier<Block> MARBLE_ENGRAVED = register("marble_engraved", id -> new Block(Block.Properties.ofFullCopy(Blocks.STONE).setId(id)), ASCreativeTab.ASTRAL_SORCERY);
+    public static final StoneDecoration MARBLE_ENGRAVED_DECORATION = registerDecoration("marble_engraved", MARBLE_ENGRAVED, ASCreativeTab.ASTRAL_SORCERY);
+    public static final RegistrySupplier<Block> MARBLE_RUNED = register("marble_runed", id -> new Block(Block.Properties.ofFullCopy(Blocks.STONE).setId(id)), ASCreativeTab.ASTRAL_SORCERY);
+    public static final StoneDecoration MARBLE_RUNED_DECORATION = registerDecoration("marble_runed", MARBLE_RUNED, ASCreativeTab.ASTRAL_SORCERY);
+
+    // 大理石 - 装飾ブロック
 
     private static StoneDecoration registerDecoration(String name, Supplier<? extends Block> material, RegistrySupplier<CreativeModeTab> tab) {
         RegistrySupplier<SlabBlock> slabBlock = register(name + "_slab", id -> new SlabBlock(Block.Properties.ofFullCopy(Blocks.STONE_SLAB).setId(id)), tab);

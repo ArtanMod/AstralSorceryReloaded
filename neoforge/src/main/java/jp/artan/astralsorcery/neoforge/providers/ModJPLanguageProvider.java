@@ -20,7 +20,17 @@ public class ModJPLanguageProvider extends LanguageProvider {
 
         // 大理石
         this.add(ASBlocks.MARBLE.get(), "大理石");
-        this.addStoneDecoration(ASBlocks.MARBLE_DECORATION, "大理石のレンガ");
+        this.add(ASBlocks.MARBLE_ARCH.get(), "大理石のアーチ");
+        this.add(ASBlocks.MARBLE_BRICKS.get(), "大理石のレンガ");
+        this.add(ASBlocks.MARBLE_CHISELED.get(), "模様入り大理石");
+        this.add(ASBlocks.MARBLE_ENGRAVED.get(), "彫刻された大理石");
+        this.add(ASBlocks.MARBLE_RUNED.get(), "ルーンの彫られた大理石");
+        this.addStoneDecoration(ASBlocks.MARBLE_DECORATION, "大理石");
+        this.addStoneDecoration(ASBlocks.MARBLE_ARCH_DECORATION, "大理石のアーチ");
+        this.addStoneDecoration(ASBlocks.MARBLE_BRICKS_DECORATION, "大理石のレンガ");
+        this.addStoneDecoration(ASBlocks.MARBLE_CHISELED_DECORATION, "模様入り大理石");
+        this.addStoneDecoration(ASBlocks.MARBLE_ENGRAVED_DECORATION, "彫刻された大理石");
+        this.addStoneDecoration(ASBlocks.MARBLE_RUNED_DECORATION, "ルーンの彫られた大理石");
 
         // 杖
         this.add(ASItems.RESONATING_WAND.get(), "共鳴の杖");
