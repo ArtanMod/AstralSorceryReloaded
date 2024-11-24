@@ -5,6 +5,7 @@ import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.DeferredSupplier;
 import dev.architectury.registry.registries.RegistrySupplier;
 import jp.artan.astralsorcery.AstralSorceryReloaded;
+import jp.artan.astralsorcery.item.ResonatingWandItem;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.BlockItem;
@@ -20,7 +21,7 @@ public class ASItems {
     private static final DeferredRegister<Item> ITEMS = DeferredRegister.create(AstralSorceryReloaded.MOD_ID, Registries.ITEM);
 
     // 杖
-    public static final RegistrySupplier<Item> RESONATING_WAND = register("resonating_wand", ASCreativeTab.ASTRAL_SORCERY);
+    public static final RegistrySupplier<ResonatingWandItem> RESONATING_WAND = register("resonating_wand", ResonatingWandItem::new, ASCreativeTab.ASTRAL_SORCERY);
 
     public static final RegistrySupplier<Item> AQUAMARINE = register("aquamarine", ASCreativeTab.ASTRAL_SORCERY);
 
