@@ -16,10 +16,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "jp.artan.fabric.ExampleModFabric"
+      "jp.artan.astralsorcery.fabric.AstralSorceryReloadedFabric"
     ],
     "client": [
-      "jp.artan.fabric.client.ExampleModFabricClient"
+      "jp.artan.astralsorcery.fabric.client.AstralSorceryReloadedFabricClient"
     ]
   },
   "mixins": [
