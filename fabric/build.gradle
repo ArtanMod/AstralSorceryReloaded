@@ -7,6 +7,12 @@ architectury {
     fabric()
 }
 
+sourceSets {
+    main {
+        resources.srcDir project(":common").file("src/main/generated")
+    }
+}
+
 configurations {
     common {
         canBeResolved = true
