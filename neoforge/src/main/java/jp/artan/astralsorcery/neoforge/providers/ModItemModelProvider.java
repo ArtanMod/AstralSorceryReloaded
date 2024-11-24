@@ -26,7 +26,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         this.basicItem(ASItems.AQUAMARINE.get());
     }
 
-    private String getItemId(Supplier<Item> item) {
+    private String getItemId(Supplier<? extends Item> item) {
         return BuiltInRegistries.ITEM.getKey(item.get()).getPath();
     }
 }
