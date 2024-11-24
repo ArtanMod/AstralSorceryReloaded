@@ -1,5 +1,10 @@
 {
   "item.astralsorcery.aquamarine": "アクアマリン",
   "item.astralsorcery.marble": "大理石",
+  "item.astralsorcery.marble_slab": "大理石のレンガのハーフブロック",
+  "item.astralsorcery.marble_stairs": "大理石のレンガの階段",
+  "item.astralsorcery.marble_tile": "大理石のレンガのタイル",
+  "item.astralsorcery.marble_vertical_slab": "大理石のレンガの縦ハーフブロック",
+  "item.astralsorcery.marble_wall": "大理石のレンガの塀",
   "item.astralsorcery.resonating_wand": "共鳴の杖"
 }

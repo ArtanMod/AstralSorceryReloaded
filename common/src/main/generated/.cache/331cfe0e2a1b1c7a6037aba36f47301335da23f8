@@ -1,0 +1,7 @@
+// 1.21.3	2024-11-24T16:05:24.0313356	Tags for minecraft:block mod id astralsorcery
+ddd55dc2679a90aabb87d1d42d65880bb7c41c19 data/c/tags/block/tile.json
+2ad02df10b82b45f186ee58c9244923d72a8d48d data/c/tags/block/vertical_slab.json
+aee1d6874a860d252554f9aa09ca7e158a43c59e data/minecraft/tags/block/mineable/pickaxe.json
+52046811e08b0691d9881fe4e88d476f8f165bf3 data/minecraft/tags/block/slabs.json
+1dd00ab929d02a91853956b8fc9c2c1fae6d896e data/minecraft/tags/block/stairs.json
+ddab3add599e594af1069f58341b2b5dfe962b57 data/minecraft/tags/block/walls.json

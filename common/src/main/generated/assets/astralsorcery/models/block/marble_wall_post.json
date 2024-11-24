@@ -1,0 +1,8 @@
+{
+  "parent": "astralsorcery:block/template_wall_post",
+  "textures": {
+    "bottom": "astralsorcery:block/marble",
+    "side": "astralsorcery:block/marble",
+    "top": "astralsorcery:block/marble"
+  }
+}

@@ -53,8 +53,8 @@ public final class AstralSorceryReloadedNeoForge {
         //generator.addProvider(event.includeClient(), new ModRecipeProvider(output));
 
         // Tag
-        //ModBlockTagsProvider blockTagsProvider = new ModBlockTagsProvider(output, lookupProvider, AstralSorceryReloaded.MOD_ID, existingFileHelper);
-        //generator.addProvider(event.includeClient(), blockTagsProvider);
+        ModBlockTagsProvider blockTagsProvider = new ModBlockTagsProvider(output, lookupProvider, AstralSorceryReloaded.MOD_ID, existingFileHelper);
+        generator.addProvider(event.includeClient(), blockTagsProvider);
         //generator.addProvider(event.includeClient(), new ModItemTagsProvider(output, lookupProvider, blockTagsProvider.contentsGetter(), AstralSorceryReloaded.MOD_ID, existingFileHelper));
     }
 }

@@ -1,6 +1,11 @@
 {
   "item.astralsorcery.aquamarine": "Aquamarine",
   "item.astralsorcery.marble": "Marble",
+  "item.astralsorcery.marble_slab": "Marble Slab",
+  "item.astralsorcery.marble_stairs": "Marble Stairs",
+  "item.astralsorcery.marble_tile": "Marble Tile",
+  "item.astralsorcery.marble_vertical_slab": "Marble Vertical Slab",
+  "item.astralsorcery.marble_wall": "Marble Wall",
   "item.astralsorcery.resonating_wand": "Resonating Wand",
   "itemGroup.astralsorcery.as_attuned_papers": "[AS] Attuned Papers",
   "itemGroup.astralsorcery.astral_sorcery": "Astral Sorcery",

@@ -1,0 +1,516 @@
+{
+  "variants": {
+    "facing=down,layers=1": {
+      "model": "astralsorcery:block/marble_tile_height1",
+      "uvlock": true
+    },
+    "facing=down,layers=10": {
+      "model": "astralsorcery:block/marble_tile_height10",
+      "uvlock": true
+    },
+    "facing=down,layers=11": {
+      "model": "astralsorcery:block/marble_tile_height11",
+      "uvlock": true
+    },
+    "facing=down,layers=12": {
+      "model": "astralsorcery:block/marble_tile_height12",
+      "uvlock": true
+    },
+    "facing=down,layers=13": {
+      "model": "astralsorcery:block/marble_tile_height13",
+      "uvlock": true
+    },
+    "facing=down,layers=14": {
+      "model": "astralsorcery:block/marble_tile_height14",
+      "uvlock": true
+    },
+    "facing=down,layers=15": {
+      "model": "astralsorcery:block/marble_tile_height15",
+      "uvlock": true
+    },
+    "facing=down,layers=16": {
+      "model": "astralsorcery:block/marble_tile_height16",
+      "uvlock": true
+    },
+    "facing=down,layers=2": {
+      "model": "astralsorcery:block/marble_tile_height2",
+      "uvlock": true
+    },
+    "facing=down,layers=3": {
+      "model": "astralsorcery:block/marble_tile_height3",
+      "uvlock": true
+    },
+    "facing=down,layers=4": {
+      "model": "astralsorcery:block/marble_tile_height4",
+      "uvlock": true
+    },
+    "facing=down,layers=5": {
+      "model": "astralsorcery:block/marble_tile_height5",
+      "uvlock": true
+    },
+    "facing=down,layers=6": {
+      "model": "astralsorcery:block/marble_tile_height6",
+      "uvlock": true
+    },
+    "facing=down,layers=7": {
+      "model": "astralsorcery:block/marble_tile_height7",
+      "uvlock": true
+    },
+    "facing=down,layers=8": {
+      "model": "astralsorcery:block/marble_tile_height8",
+      "uvlock": true
+    },
+    "facing=down,layers=9": {
+      "model": "astralsorcery:block/marble_tile_height9",
+      "uvlock": true
+    },
+    "facing=east,layers=1": {
+      "model": "astralsorcery:block/marble_tile_height1",
+      "uvlock": true,
+      "x": 270,
+      "y": 270
+    },
+    "facing=east,layers=10": {
+      "model": "astralsorcery:block/marble_tile_height10",
+      "uvlock": true,
+      "x": 270,
+      "y": 270
+    },
+    "facing=east,layers=11": {
+      "model": "astralsorcery:block/marble_tile_height11",
+      "uvlock": true,
+      "x": 270,
+      "y": 270
+    },
+    "facing=east,layers=12": {
+      "model": "astralsorcery:block/marble_tile_height12",
+      "uvlock": true,
+      "x": 270,
+      "y": 270
+    },
+    "facing=east,layers=13": {
+      "model": "astralsorcery:block/marble_tile_height13",
+      "uvlock": true,
+      "x": 270,
+      "y": 270
+    },
+    "facing=east,layers=14": {
+      "model": "astralsorcery:block/marble_tile_height14",
+      "uvlock": true,
+      "x": 270,
+      "y": 270
+    },
+    "facing=east,layers=15": {
+      "model": "astralsorcery:block/marble_tile_height15",
+      "uvlock": true,
+      "x": 270,
+      "y": 270
+    },
+    "facing=east,layers=16": {
+      "model": "astralsorcery:block/marble_tile_height16",
+      "uvlock": true,
+      "x": 270,
+      "y": 270
+    },
+    "facing=east,layers=2": {
+      "model": "astralsorcery:block/marble_tile_height2",
+      "uvlock": true,
+      "x": 270,
+      "y": 270
+    },
+    "facing=east,layers=3": {
+      "model": "astralsorcery:block/marble_tile_height3",
+      "uvlock": true,
+      "x": 270,
+      "y": 270
+    },
+    "facing=east,layers=4": {
+      "model": "astralsorcery:block/marble_tile_height4",
+      "uvlock": true,
+      "x": 270,
+      "y": 270
+    },
+    "facing=east,layers=5": {
+      "model": "astralsorcery:block/marble_tile_height5",
+      "uvlock": true,
+      "x": 270,
+      "y": 270
+    },
+    "facing=east,layers=6": {
+      "model": "astralsorcery:block/marble_tile_height6",
+      "uvlock": true,
+      "x": 270,
+      "y": 270
+    },
+    "facing=east,layers=7": {
+      "model": "astralsorcery:block/marble_tile_height7",
+      "uvlock": true,
+      "x": 270,
+      "y": 270
+    },
+    "facing=east,layers=8": {
+      "model": "astralsorcery:block/marble_tile_height8",
+      "uvlock": true,
+      "x": 270,
+      "y": 270
+    },
+    "facing=east,layers=9": {
+      "model": "astralsorcery:block/marble_tile_height9",
+      "uvlock": true,
+      "x": 270,
+      "y": 270
+    },
+    "facing=north,layers=1": {
+      "model": "astralsorcery:block/marble_tile_height1",
+      "uvlock": true,
+      "x": 270,
+      "y": 180
+    },
+    "facing=north,layers=10": {
+      "model": "astralsorcery:block/marble_tile_height10",
+      "uvlock": true,
+      "x": 270,
+      "y": 180
+    },
+    "facing=north,layers=11": {
+      "model": "astralsorcery:block/marble_tile_height11",
+      "uvlock": true,
+      "x": 270,
+      "y": 180
+    },
+    "facing=north,layers=12": {
+      "model": "astralsorcery:block/marble_tile_height12",
+      "uvlock": true,
+      "x": 270,
+      "y": 180
+    },
+    "facing=north,layers=13": {
+      "model": "astralsorcery:block/marble_tile_height13",
+      "uvlock": true,
+      "x": 270,
+      "y": 180
+    },
+    "facing=north,layers=14": {
+      "model": "astralsorcery:block/marble_tile_height14",
+      "uvlock": true,
+      "x": 270,
+      "y": 180
+    },
+    "facing=north,layers=15": {
+      "model": "astralsorcery:block/marble_tile_height15",
+      "uvlock": true,
+      "x": 270,
+      "y": 180
+    },
+    "facing=north,layers=16": {
+      "model": "astralsorcery:block/marble_tile_height16",
+      "uvlock": true,
+      "x": 270,
+      "y": 180
+    },
+    "facing=north,layers=2": {
+      "model": "astralsorcery:block/marble_tile_height2",
+      "uvlock": true,
+      "x": 270,
+      "y": 180
+    },
+    "facing=north,layers=3": {
+      "model": "astralsorcery:block/marble_tile_height3",
+      "uvlock": true,
+      "x": 270,
+      "y": 180
+    },
+    "facing=north,layers=4": {
+      "model": "astralsorcery:block/marble_tile_height4",
+      "uvlock": true,
+      "x": 270,
+      "y": 180
+    },
+    "facing=north,layers=5": {
+      "model": "astralsorcery:block/marble_tile_height5",
+      "uvlock": true,
+      "x": 270,
+      "y": 180
+    },
+    "facing=north,layers=6": {
+      "model": "astralsorcery:block/marble_tile_height6",
+      "uvlock": true,
+      "x": 270,
+      "y": 180
+    },
+    "facing=north,layers=7": {
+      "model": "astralsorcery:block/marble_tile_height7",
+      "uvlock": true,
+      "x": 270,
+      "y": 180
+    },
+    "facing=north,layers=8": {
+      "model": "astralsorcery:block/marble_tile_height8",
+      "uvlock": true,
+      "x": 270,
+      "y": 180
+    },
+    "facing=north,layers=9": {
+      "model": "astralsorcery:block/marble_tile_height9",
+      "uvlock": true,
+      "x": 270,
+      "y": 180
+    },
+    "facing=south,layers=1": {
+      "model": "astralsorcery:block/marble_tile_height1",
+      "x": 270
+    },
+    "facing=south,layers=10": {
+      "model": "astralsorcery:block/marble_tile_height10",
+      "x": 270
+    },
+    "facing=south,layers=11": {
+      "model": "astralsorcery:block/marble_tile_height11",
+      "x": 270
+    },
+    "facing=south,layers=12": {
+      "model": "astralsorcery:block/marble_tile_height12",
+      "x": 270
+    },
+    "facing=south,layers=13": {
+      "model": "astralsorcery:block/marble_tile_height13",
+      "x": 270
+    },
+    "facing=south,layers=14": {
+      "model": "astralsorcery:block/marble_tile_height14",
+      "x": 270
+    },
+    "facing=south,layers=15": {
+      "model": "astralsorcery:block/marble_tile_height15",
+      "x": 270
+    },
+    "facing=south,layers=16": {
+      "model": "astralsorcery:block/marble_tile_height16",
+      "x": 270
+    },
+    "facing=south,layers=2": {
+      "model": "astralsorcery:block/marble_tile_height2",
+      "x": 270
+    },
+    "facing=south,layers=3": {
+      "model": "astralsorcery:block/marble_tile_height3",
+      "x": 270
+    },
+    "facing=south,layers=4": {
+      "model": "astralsorcery:block/marble_tile_height4",
+      "x": 270
+    },
+    "facing=south,layers=5": {
+      "model": "astralsorcery:block/marble_tile_height5",
+      "x": 270
+    },
+    "facing=south,layers=6": {
+      "model": "astralsorcery:block/marble_tile_height6",
+      "x": 270
+    },
+    "facing=south,layers=7": {
+      "model": "astralsorcery:block/marble_tile_height7",
+      "x": 270
+    },
+    "facing=south,layers=8": {
+      "model": "astralsorcery:block/marble_tile_height8",
+      "x": 270
+    },
+    "facing=south,layers=9": {
+      "model": "astralsorcery:block/marble_tile_height9",
+      "x": 270
+    },
+    "facing=up,layers=1": {
+      "model": "astralsorcery:block/marble_tile_height1",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "facing=up,layers=10": {
+      "model": "astralsorcery:block/marble_tile_height10",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "facing=up,layers=11": {
+      "model": "astralsorcery:block/marble_tile_height11",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "facing=up,layers=12": {
+      "model": "astralsorcery:block/marble_tile_height12",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "facing=up,layers=13": {
+      "model": "astralsorcery:block/marble_tile_height13",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "facing=up,layers=14": {
+      "model": "astralsorcery:block/marble_tile_height14",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "facing=up,layers=15": {
+      "model": "astralsorcery:block/marble_tile_height15",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "facing=up,layers=16": {
+      "model": "astralsorcery:block/marble_tile_height16",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "facing=up,layers=2": {
+      "model": "astralsorcery:block/marble_tile_height2",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "facing=up,layers=3": {
+      "model": "astralsorcery:block/marble_tile_height3",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "facing=up,layers=4": {
+      "model": "astralsorcery:block/marble_tile_height4",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "facing=up,layers=5": {
+      "model": "astralsorcery:block/marble_tile_height5",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "facing=up,layers=6": {
+      "model": "astralsorcery:block/marble_tile_height6",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "facing=up,layers=7": {
+      "model": "astralsorcery:block/marble_tile_height7",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "facing=up,layers=8": {
+      "model": "astralsorcery:block/marble_tile_height8",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "facing=up,layers=9": {
+      "model": "astralsorcery:block/marble_tile_height9",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "facing=west,layers=1": {
+      "model": "astralsorcery:block/marble_tile_height1",
+      "uvlock": true,
+      "x": 270,
+      "y": 90
+    },
+    "facing=west,layers=10": {
+      "model": "astralsorcery:block/marble_tile_height10",
+      "uvlock": true,
+      "x": 270,
+      "y": 90
+    },
+    "facing=west,layers=11": {
+      "model": "astralsorcery:block/marble_tile_height11",
+      "uvlock": true,
+      "x": 270,
+      "y": 90
+    },
+    "facing=west,layers=12": {
+      "model": "astralsorcery:block/marble_tile_height12",
+      "uvlock": true,
+      "x": 270,
+      "y": 90
+    },
+    "facing=west,layers=13": {
+      "model": "astralsorcery:block/marble_tile_height13",
+      "uvlock": true,
+      "x": 270,
+      "y": 90
+    },
+    "facing=west,layers=14": {
+      "model": "astralsorcery:block/marble_tile_height14",
+      "uvlock": true,
+      "x": 270,
+      "y": 90
+    },
+    "facing=west,layers=15": {
+      "model": "astralsorcery:block/marble_tile_height15",
+      "uvlock": true,
+      "x": 270,
+      "y": 90
+    },
+    "facing=west,layers=16": {
+      "model": "astralsorcery:block/marble_tile_height16",
+      "uvlock": true,
+      "x": 270,
+      "y": 90
+    },
+    "facing=west,layers=2": {
+      "model": "astralsorcery:block/marble_tile_height2",
+      "uvlock": true,
+      "x": 270,
+      "y": 90
+    },
+    "facing=west,layers=3": {
+      "model": "astralsorcery:block/marble_tile_height3",
+      "uvlock": true,
+      "x": 270,
+      "y": 90
+    },
+    "facing=west,layers=4": {
+      "model": "astralsorcery:block/marble_tile_height4",
+      "uvlock": true,
+      "x": 270,
+      "y": 90
+    },
+    "facing=west,layers=5": {
+      "model": "astralsorcery:block/marble_tile_height5",
+      "uvlock": true,
+      "x": 270,
+      "y": 90
+    },
+    "facing=west,layers=6": {
+      "model": "astralsorcery:block/marble_tile_height6",
+      "uvlock": true,
+      "x": 270,
+      "y": 90
+    },
+    "facing=west,layers=7": {
+      "model": "astralsorcery:block/marble_tile_height7",
+      "uvlock": true,
+      "x": 270,
+      "y": 90
+    },
+    "facing=west,layers=8": {
+      "model": "astralsorcery:block/marble_tile_height8",
+      "uvlock": true,
+      "x": 270,
+      "y": 90
+    },
+    "facing=west,layers=9": {
+      "model": "astralsorcery:block/marble_tile_height9",
+      "uvlock": true,
+      "x": 270,
+      "y": 90
+    }
+  }
+}

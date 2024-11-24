@@ -1,4 +1,42 @@
 package jp.artan.astralsorcery.neoforge.providers;
 
-public class ModBlockTagsProvider {
+import jp.artan.astralsorcery.init.ASBlocks;
+import jp.artan.astralsorcery.init.ASTags;
+import jp.artan.astralsorcery.sets.StoneDecoration;
+import net.minecraft.core.HolderLookup;
+import net.minecraft.data.PackOutput;
+import net.minecraft.tags.BlockTags;
+import net.neoforged.neoforge.common.data.BlockTagsProvider;
+import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.concurrent.CompletableFuture;
+
+public class ModBlockTagsProvider extends BlockTagsProvider {
+    public ModBlockTagsProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, String modId, @Nullable ExistingFileHelper existingFileHelper) {
+        super(output, lookupProvider, modId, existingFileHelper);
+    }
+
+    @Override
+    protected void addTags(HolderLookup.Provider arg) {
+        this.tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ASBlocks.MARBLE.get());
+        this.addStoneDecoration(ASBlocks.MARBLE_DECORATION);
+    }
+
+    protected void addStoneDecoration(StoneDecoration decoration) {
+
+        // 通常タグ
+        this.tag(BlockTags.SLABS).add(decoration.slab.get());
+        this.tag(ASTags.BlockTag.VERTICAL_SLAB).add(decoration.verticalSlab.get());
+        this.tag(BlockTags.STAIRS).add(decoration.stairs.get());
+        this.tag(ASTags.BlockTag.TILE).add(decoration.tile.get());
+        this.tag(BlockTags.WALLS).add(decoration.wall.get());
+
+        // 採掘タグ
+        this.tag(BlockTags.MINEABLE_WITH_PICKAXE).add(decoration.slab.get());
+        this.tag(BlockTags.MINEABLE_WITH_PICKAXE).add(decoration.verticalSlab.get());
+        this.tag(BlockTags.MINEABLE_WITH_PICKAXE).add(decoration.stairs.get());
+        this.tag(BlockTags.MINEABLE_WITH_PICKAXE).add(decoration.tile.get());
+        this.tag(BlockTags.MINEABLE_WITH_PICKAXE).add(decoration.wall.get());
+    }
 }
