@@ -25,7 +25,8 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                 ASBlocks.MARBLE_BRICKS.get(),
                 ASBlocks.MARBLE_CHISELED.get(),
                 ASBlocks.MARBLE_ENGRAVED.get(),
-                ASBlocks.MARBLE_RUNED.get()
+                ASBlocks.MARBLE_RUNED.get(),
+                ASBlocks.MARBLE_PILLAR.get()
         );
         this.addStoneDecoration(ASBlocks.MARBLE_DECORATION);
         this.addStoneDecoration(ASBlocks.MARBLE_ARCH_DECORATION);

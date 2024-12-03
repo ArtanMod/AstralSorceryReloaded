@@ -5,6 +5,7 @@ import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.DeferredSupplier;
 import dev.architectury.registry.registries.RegistrySupplier;
 import jp.artan.astralsorcery.AstralSorceryReloaded;
+import jp.artan.astralsorcery.block.PillarBlock;
 import jp.artan.astralsorcery.block.TileBlock;
 import jp.artan.astralsorcery.block.VerticalSlabBlock;
 import jp.artan.astralsorcery.sets.StoneDecoration;
@@ -14,8 +15,6 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
-import net.minecraft.world.level.block.state.properties.BlockSetType;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.function.Function;
 import java.util.function.Supplier;
@@ -47,6 +46,7 @@ public class ASBlocks {
     public static final StoneDecoration MARBLE_ENGRAVED_DECORATION = registerDecoration("marble_engraved", MARBLE_ENGRAVED, ASCreativeTab.ASTRAL_SORCERY);
     public static final RegistrySupplier<Block> MARBLE_RUNED = register("marble_runed", id -> new Block(Block.Properties.ofFullCopy(Blocks.STONE).setId(id)), ASCreativeTab.ASTRAL_SORCERY);
     public static final StoneDecoration MARBLE_RUNED_DECORATION = registerDecoration("marble_runed", MARBLE_RUNED, ASCreativeTab.ASTRAL_SORCERY);
+    public static final RegistrySupplier<PillarBlock> MARBLE_PILLAR = register("marble_pillar", id -> new PillarBlock(Block.Properties.ofFullCopy(Blocks.STONE).setId(id)), ASCreativeTab.ASTRAL_SORCERY);
 
     // 大理石 - 装飾ブロック
 

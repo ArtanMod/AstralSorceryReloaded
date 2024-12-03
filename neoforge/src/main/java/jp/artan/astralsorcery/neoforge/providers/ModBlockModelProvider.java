@@ -1,7 +1,9 @@
 package jp.artan.astralsorcery.neoforge.providers;
 
+import jp.artan.astralsorcery.block.PillarBlock;
 import jp.artan.astralsorcery.block.TileBlock;
 import jp.artan.astralsorcery.block.VerticalSlabBlock;
+import jp.artan.astralsorcery.block.properties.PillarType;
 import jp.artan.astralsorcery.block.properties.VerticalSlabType;
 import jp.artan.astralsorcery.init.ASBlocks;
 import jp.artan.astralsorcery.sets.StoneDecoration;
@@ -9,7 +11,6 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.StairBlock;
@@ -28,12 +29,19 @@ import java.util.function.Supplier;
 
 public class ModBlockModelProvider extends BlockStateProvider {
 
+    private final ResourceLocation pillar = this.modLoc("block/pillar");
+    private final ResourceLocation pillarTop = this.modLoc("block/pillar_top");
+    private final ResourceLocation pillarBottom = this.modLoc("block/pillar_bottom");
+
     public ModBlockModelProvider(PackOutput output, String modid, ExistingFileHelper exFileHelper) {
         super(output, modid, exFileHelper);
     }
 
     @Override
     protected void registerStatesAndModels() {
+
+        // 共通モデルを作成
+        createCommonModel();
 
         // 大理石
         ResourceLocation marbleRL = this.modLoc("block/marble");
@@ -55,7 +63,17 @@ public class ModBlockModelProvider extends BlockStateProvider {
         this.stoneDecoration(ASBlocks.MARBLE_ARCH_DECORATION, ASBlocks.MARBLE_ARCH, marbleArchRL, marbleRL);
 
         // 大理石の柱
+        ResourceLocation marblePillarRL = this.modLoc("block/marble_pillar");
         ResourceLocation marblePillarUpDownRL = this.modLoc("block/marble_pillar_updown");
+        ResourceLocation marblePillarInnerRL = this.modLoc("block/marble_pillar_inner");
+        ResourceLocation marblePillarTopRL = this.modLoc("block/marble_pillar_top");
+        ResourceLocation marblePillarBottomRL = this.modLoc("block/marble_pillar_bottom");
+        pillar(
+                ASBlocks.MARBLE_PILLAR.get(),
+                createMiddlePillarModel(ASBlocks.MARBLE_PILLAR.get(), marblePillarRL, marblePillarInnerRL),
+                createTopPillarModel(ASBlocks.MARBLE_PILLAR.get(), marblePillarTopRL, marblePillarInnerRL, marblePillarUpDownRL),
+                createBottomPillarModel(ASBlocks.MARBLE_PILLAR.get(), marblePillarBottomRL, marblePillarInnerRL, marblePillarUpDownRL)
+        );
 
         // ルーンの彫られた大理石
         ResourceLocation marbleRunedRL = this.modLoc("block/marble_runed");
@@ -64,6 +82,79 @@ public class ModBlockModelProvider extends BlockStateProvider {
         this.simpleBlock(ASBlocks.MARBLE_RUNED.get(), marbleRunedModel);
         this.simpleBlockItem(ASBlocks.MARBLE_RUNED.get(), marbleRunedModel);
         this.stoneDecoration(ASBlocks.MARBLE_RUNED_DECORATION, ASBlocks.MARBLE_RUNED, marbleRunedRL, marblePillarUpDownRL);
+    }
+
+    private void createCommonModel() {
+        this.models().withExistingParent(this.pillar.getPath(), "block/block")
+                .texture("particle", "#side")
+                .element()
+                .from(2, 0, 2).to(14, 16, 14)
+                .face(Direction.DOWN).texture("#end").cullface(Direction.DOWN).end()
+                .face(Direction.UP).texture("#end").cullface(Direction.UP).end()
+                .face(Direction.NORTH).texture("#side").end()
+                .face(Direction.SOUTH).texture("#side").end()
+                .face(Direction.WEST).texture("#side").end()
+                .face(Direction.EAST).texture("#side").end();
+        this.models().withExistingParent(this.pillarTop.getPath(), "block/block")
+                .texture("particle", "#side")
+                .element().from(0, 12, 0).to(16, 16, 16)
+                .face(Direction.DOWN).texture("#end").end()
+                .face(Direction.UP).texture("#top").cullface(Direction.UP).end()
+                .face(Direction.NORTH).texture("#side").cullface(Direction.NORTH).end()
+                .face(Direction.SOUTH).texture("#side").cullface(Direction.SOUTH).end()
+                .face(Direction.WEST).texture("#side").cullface(Direction.WEST).end()
+                .face(Direction.EAST).texture("#side").cullface(Direction.EAST).end()
+                .end()
+                .element().from(2, 0, 2).to(14, 12, 14)
+                .face(Direction.DOWN).texture("#end").cullface(Direction.DOWN).end()
+                .face(Direction.NORTH).texture("#side").end()
+                .face(Direction.SOUTH).texture("#side").end()
+                .face(Direction.WEST).texture("#side").end()
+                .face(Direction.EAST).texture("#side").end();
+        this.models().withExistingParent(this.pillarBottom.getPath(), "block/block")
+                .texture("particle", "#side")
+                .element().from( 2, 4, 2).to(14, 16, 14)
+                .face(Direction.UP).texture("#end").cullface(Direction.UP).end()
+                .face(Direction.NORTH).texture("#side").end()
+                .face(Direction.SOUTH).texture("#side").end()
+                .face(Direction.WEST).texture("#side").end()
+                .face(Direction.EAST).texture("#side").end()
+                .end()
+                .element().from(0, 0, 0).to(16, 4, 16)
+                .face(Direction.DOWN).texture("#bottom").cullface(Direction.DOWN).end()
+                .face(Direction.UP).texture("#end").end()
+                .face(Direction.NORTH).texture("#side").cullface(Direction.NORTH).end()
+                .face(Direction.SOUTH).texture("#side").cullface(Direction.SOUTH).end()
+                .face(Direction.WEST).texture("#side").cullface(Direction.WEST).end()
+                .face(Direction.EAST).texture("#side").cullface(Direction.EAST).end();
+    }
+
+    protected BlockModelBuilder createMiddlePillarModel(PillarBlock block, ResourceLocation side, ResourceLocation end) {
+        return this.models().withExistingParent(this.getBlockId(block), this.pillar)
+                .texture("side", side)
+                .texture("end", end);
+    }
+
+    protected BlockModelBuilder createTopPillarModel(PillarBlock block, ResourceLocation side, ResourceLocation end, ResourceLocation top) {
+        return this.models().withExistingParent(this.getBlockId(block) + "_top", this.pillarTop)
+                .texture("side", side)
+                .texture("end", end)
+                .texture("top", top);
+    }
+
+    protected BlockModelBuilder createBottomPillarModel(PillarBlock block, ResourceLocation side, ResourceLocation end, ResourceLocation bottom) {
+        return this.models().withExistingParent(this.getBlockId(block) + "_bottom", this.pillarBottom)
+                .texture("side", side)
+                .texture("end", end)
+                .texture("bottom", bottom);
+    }
+
+    protected void pillar(PillarBlock block, ModelFile middleModel, ModelFile topModel, ModelFile bottomModel) {
+        getVariantBuilder(block)
+                .partialState().with(PillarBlock.TYPE, PillarType.TOP).addModels(new ConfiguredModel(topModel))
+                .partialState().with(PillarBlock.TYPE, PillarType.MIDDLE).addModels(new ConfiguredModel(middleModel))
+                .partialState().with(PillarBlock.TYPE, PillarType.BOTTOM).addModels(new ConfiguredModel(bottomModel));
+        this.simpleBlockItem(block, middleModel);
     }
 
     protected void cubeAll(Block block, @Nullable String renderType) {
