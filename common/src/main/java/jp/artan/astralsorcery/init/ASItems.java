@@ -8,14 +8,10 @@ import jp.artan.astralsorcery.AstralSorceryReloaded;
 import jp.artan.astralsorcery.item.ResonatingWandItem;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.function.Function;
-import java.util.function.Supplier;
 
 public class ASItems {
     private static final DeferredRegister<Item> ITEMS = DeferredRegister.create(AstralSorceryReloaded.MOD_ID, Registries.ITEM);
