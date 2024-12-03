@@ -36,6 +36,7 @@ public class ModUDLanguageProvider extends LanguageProvider {
         this.add(ASBlocks.MARBLE_CHISELED.get(), LangUtils.toUpsideDownEnglish("Chiseled Marble"));
         this.add(ASBlocks.MARBLE_ENGRAVED.get(), LangUtils.toUpsideDownEnglish("Engraved Marble"));
         this.add(ASBlocks.MARBLE_RUNED.get(), LangUtils.toUpsideDownEnglish("Runed Marble"));
+        this.add(ASBlocks.ALTAR_DISCOVERY.get(), LangUtils.toUpsideDownEnglish("Luminous Crafting Table"));
     }
 
     @Override
@@ -82,7 +83,7 @@ public class ModUDLanguageProvider extends LanguageProvider {
      * @return true:除外する false:除外しない
      */
     protected boolean addToExclude(Block block) {
-        return block instanceof WallSignBlock || block instanceof WallHangingSignBlock || block == ASBlocks.MARBLE_CHISELED.get() || block == ASBlocks.MARBLE_ENGRAVED.get() || block == ASBlocks.MARBLE_RUNED.get();
+        return block instanceof WallSignBlock || block instanceof WallHangingSignBlock || block == ASBlocks.MARBLE_CHISELED.get() || block == ASBlocks.MARBLE_ENGRAVED.get() || block == ASBlocks.MARBLE_RUNED.get() || block == ASBlocks.ALTAR_DISCOVERY.get();
     }
 
     /**

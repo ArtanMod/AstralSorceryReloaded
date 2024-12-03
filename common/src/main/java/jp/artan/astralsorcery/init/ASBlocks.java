@@ -28,10 +28,8 @@ public class ASBlocks {
         ITEMS.register();
     }
 
-    // public static final RegistrySupplier<Block> ROCK_COLLECTOR_CRYSTAL = register("collector_crystal", () -> new Block(Block.Properties.ofFullCopy(Blocks.DRIED_KELP_BLOCK)), ASCreativeTab.ASTRAL_SORCERY);
-
-    // Luminous Crafting Table
-    //public static final RegistrySupplier<Block> ALTAR_DISCOVERY = register("altar_discovery", () -> new Block(Block.Properties.ofFullCopy(Blocks.DRIED_KELP_BLOCK)), ASCreativeTab.ASTRAL_SORCERY);
+    // 作業台
+    public static final RegistrySupplier<Block> ALTAR_DISCOVERY = register("altar_discovery", id -> new Block(Block.Properties.ofFullCopy(Blocks.CRAFTING_TABLE).setId(id)), ASCreativeTab.ASTRAL_SORCERY);
 
     // 大理石
     public static final RegistrySupplier<Block> MARBLE = register("marble", id -> new Block(Block.Properties.ofFullCopy(Blocks.STONE).setId(id)), ASCreativeTab.ASTRAL_SORCERY);
