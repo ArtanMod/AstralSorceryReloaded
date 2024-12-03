@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "astralsorcery:marble_chiseled",
+  "result": {
+    "count": 2,
+    "id": "astralsorcery:marble_chiseled_slab"
+  }
+}

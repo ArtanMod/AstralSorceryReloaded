@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "astralsorcery:marble_engraved",
+  "result": {
+    "count": 16,
+    "id": "astralsorcery:marble_engraved_tile"
+  }
+}

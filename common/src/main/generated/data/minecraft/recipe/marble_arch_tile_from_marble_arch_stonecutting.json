@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "astralsorcery:marble_arch",
+  "result": {
+    "count": 16,
+    "id": "astralsorcery:marble_arch_tile"
+  }
+}

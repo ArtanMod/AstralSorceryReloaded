@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_marble_engraved": {
+      "conditions": {
+        "items": [
+          {
+            "items": "astralsorcery:marble_engraved"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:marble_engraved_tile_from_marble_engraved_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_marble_engraved"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:marble_engraved_tile_from_marble_engraved_stonecutting"
+    ]
+  }
+}

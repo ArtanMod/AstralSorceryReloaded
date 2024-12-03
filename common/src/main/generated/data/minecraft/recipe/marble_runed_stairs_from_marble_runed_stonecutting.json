@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "astralsorcery:marble_runed",
+  "result": {
+    "count": 1,
+    "id": "astralsorcery:marble_runed_stairs"
+  }
+}

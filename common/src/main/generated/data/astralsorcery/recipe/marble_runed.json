@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "A": "astralsorcery:marble",
+    "B": "astralsorcery:marble_chiseled"
+  },
+  "pattern": [
+    "ABA"
+  ],
+  "result": {
+    "count": 3,
+    "id": "astralsorcery:marble_runed"
+  }
+}

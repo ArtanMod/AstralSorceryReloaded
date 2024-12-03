@@ -50,7 +50,7 @@ public final class AstralSorceryReloadedNeoForge {
         generator.addProvider(event.includeClient(), new ModJPLanguageProvider(output, AstralSorceryReloaded.MOD_ID));
 
         // Recipe
-        //generator.addProvider(event.includeClient(), new ModRecipeProvider(output));
+        generator.addProvider(event.includeClient(), new ModRecipeProvider.Runner(output, lookupProvider));
 
         // Tag
         ModBlockTagsProvider blockTagsProvider = new ModBlockTagsProvider(output, lookupProvider, AstralSorceryReloaded.MOD_ID, existingFileHelper);

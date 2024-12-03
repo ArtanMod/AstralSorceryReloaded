@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "astralsorcery:marble_bricks_slab",
+  "result": {
+    "count": 8,
+    "id": "astralsorcery:marble_bricks_tile"
+  }
+}
