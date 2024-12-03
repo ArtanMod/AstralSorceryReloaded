@@ -1,4 +1,5 @@
-// 1.21.3	2024-11-24T17:56:34.2061399	Block States: astralsorcery
+// 1.21.3	2024-12-03T21:38:26.8825873	Block States: astralsorcery
+f84b82aeb03ce1146ed9b3e5bf6eecc8027cbfd8 assets/astralsorcery/blockstates/altar_discovery.json
 d55b778a6e354d1352528ab8a2f428b0ba32ae39 assets/astralsorcery/blockstates/marble.json
 9830d318258d3871d3353196015c68a61199d7e0 assets/astralsorcery/blockstates/marble_arch.json
 e41fb00348e8f72b8aec3700d940c00ff9e94e32 assets/astralsorcery/blockstates/marble_arch_slab.json
@@ -35,6 +36,7 @@ e045308f112794c9925fbf18a8e9b81ec12e2927 assets/astralsorcery/blockstates/marble
 98d5aa392a1a5ee0c0b0e2582f5a00a6c770e0cb assets/astralsorcery/blockstates/marble_tile.json
 88679e52dadea2ece55b563436287208b54812b7 assets/astralsorcery/blockstates/marble_vertical_slab.json
 c5151e0bfd6421eb233f74c276b41e005dfce2e6 assets/astralsorcery/blockstates/marble_wall.json
+bd1493d6d59b1488d65a5f99f9820d3cd4c5933c assets/astralsorcery/models/block/altar_discovery.json
 e3181276e83ae1830fca1be778b4e495d7afc21e assets/astralsorcery/models/block/marble.json
 8879ba05948b2b24da32f341e40946ae546da831 assets/astralsorcery/models/block/marble_arch.json
 c1151a7cd9f0653f88df6ca928bfee2c79de4d24 assets/astralsorcery/models/block/marble_arch_slab_bottom.json
@@ -209,6 +211,7 @@ de6fdfe4810778e2af1a9d748e6a46a1fa7256f3 assets/astralsorcery/models/block/marbl
 4c5fba858d569ff418b62c95336c41d55cde0e0d assets/astralsorcery/models/block/marble_wall_post.json
 635a711782adbb84b13de7e0eb422e311831a954 assets/astralsorcery/models/block/marble_wall_side.json
 bbb5f6d8cf0c8e0a27590486c01a8c98e872888c assets/astralsorcery/models/block/marble_wall_side_tall.json
+0f42d21dc2fe8be8e819a4b7a94933a7c670e56c assets/astralsorcery/models/item/altar_discovery.json
 9a87a3c44a4aa1b2fdb375a457971fc3d2b7c299 assets/astralsorcery/models/item/marble.json
 6403fe9899b6f4c347b5d40eed9873af99aaff0b assets/astralsorcery/models/item/marble_arch.json
 78b7a1a66eeff2b26a12359f3b772b5ee479036a assets/astralsorcery/models/item/marble_arch_slab.json

@@ -71,6 +71,8 @@ public class ModLootTableProvider extends LootTableProvider {
             this.dropStoneDecoration(ASBlocks.MARBLE_CHISELED_DECORATION);
             this.dropStoneDecoration(ASBlocks.MARBLE_ENGRAVED_DECORATION);
             this.dropStoneDecoration(ASBlocks.MARBLE_RUNED_DECORATION);
+
+            this.dropSelf(ASBlocks.ALTAR_DISCOVERY.get());
         }
 
         protected Iterable<Block> getKnownBlocks() {

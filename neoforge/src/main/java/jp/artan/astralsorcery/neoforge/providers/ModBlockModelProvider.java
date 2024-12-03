@@ -64,6 +64,11 @@ public class ModBlockModelProvider extends BlockStateProvider {
         this.simpleBlock(ASBlocks.MARBLE_RUNED.get(), marbleRunedModel);
         this.simpleBlockItem(ASBlocks.MARBLE_RUNED.get(), marbleRunedModel);
         this.stoneDecoration(ASBlocks.MARBLE_RUNED_DECORATION, ASBlocks.MARBLE_RUNED, marbleRunedRL, marblePillarUpDownRL);
+
+        // 作業台
+        BlockModelBuilder alterDiscovery = this.createAltarDiscoveryModel();
+        this.simpleBlock(ASBlocks.ALTAR_DISCOVERY.get(), alterDiscovery);
+        this.simpleBlockItem(ASBlocks.ALTAR_DISCOVERY.get(), alterDiscovery);
     }
 
     protected void cubeAll(Block block, @Nullable String renderType) {
@@ -238,6 +243,42 @@ public class ModBlockModelProvider extends BlockStateProvider {
         this.stairs(decoration.stairs.get(), sideRL, upBottomRL, upBottomRL, renderType);
         this.tile(decoration.tile.get(), sideRL, upBottomRL, upBottomRL, renderType);
         this.wall(decoration.wall.get(), sideRL, upBottomRL, upBottomRL, renderType);
+    }
+
+    private BlockModelBuilder createAltarDiscoveryModel() {
+        return this.models().withExistingParent("altar_discovery", "block/block")
+                .texture("particle", this.modLoc("block/wood_raw"))
+                .texture("table_tex_top", this.modLoc("block/altar_1_top"))
+                .texture("table_tex_side", this.modLoc("block/altar_1_side"))
+                .texture("table_tex_bottom", this.modLoc("block/altar_1_bottom"))
+                // pillar
+                .element()
+                .from(4, 2, 4).to(12, 9.5f, 12)
+                .face(Direction.NORTH).uvs(4, 6, 12, 14).texture("#table_tex_side").end()
+                .face(Direction.SOUTH).uvs(4, 6, 12, 14).texture("#table_tex_side").end()
+                .face(Direction.WEST).uvs(4, 6, 12, 14).texture("#table_tex_side").end()
+                .face(Direction.EAST).uvs(4, 6, 12, 14).texture("#table_tex_side").end()
+                .end()
+                // base
+                .element()
+                .from(2, 0, 2).to(14, 2, 14)
+                .face(Direction.DOWN).uvs(2, 2, 14, 14).texture("#table_tex_bottom").end()
+                .face(Direction.UP).uvs(2, 2, 14, 14).texture("#table_tex_bottom").end()
+                .face(Direction.NORTH).uvs(2, 14, 14, 16).texture("#table_tex_side").end()
+                .face(Direction.SOUTH).uvs(2, 14, 14, 16).texture("#table_tex_side").end()
+                .face(Direction.WEST).uvs(2, 14, 14, 16).texture("#table_tex_side").end()
+                .face(Direction.EAST).uvs(2, 14, 14, 16).texture("#table_tex_side").end()
+                .end()
+                // top
+                .element()
+                .from(0, 9.5f, 0).to(16, 15.5f, 16)
+                .face(Direction.DOWN).uvs(0, 0, 16, 15.5f).texture("#table_tex_bottom").end()
+                .face(Direction.UP).uvs(0, 0, 16, 16).texture("#table_tex_top").end()
+                .face(Direction.NORTH).uvs(0, 0, 16, 6).texture("#table_tex_side").end()
+                .face(Direction.SOUTH).uvs(0, 0, 16, 6).texture("#table_tex_side").end()
+                .face(Direction.WEST).uvs(0, 0, 16, 6).texture("#table_tex_side").end()
+                .face(Direction.EAST).uvs(0, 0, 16, 6).texture("#table_tex_side").end()
+                .end();
     }
 
     private String getBlockId(Block block) {

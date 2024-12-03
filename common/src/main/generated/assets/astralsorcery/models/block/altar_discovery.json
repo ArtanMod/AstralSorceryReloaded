@@ -1,0 +1,155 @@
+{
+  "parent": "minecraft:block/block",
+  "elements": [
+    {
+      "faces": {
+        "east": {
+          "texture": "#table_tex_side",
+          "uv": [
+            4.0,
+            6.0,
+            12.0,
+            14.0
+          ]
+        },
+        "north": {
+          "texture": "#table_tex_side",
+          "uv": [
+            4.0,
+            6.0,
+            12.0,
+            14.0
+          ]
+        },
+        "south": {
+          "texture": "#table_tex_side",
+          "uv": [
+            4.0,
+            6.0,
+            12.0,
+            14.0
+          ]
+        },
+        "west": {
+          "texture": "#table_tex_side",
+          "uv": [
+            4.0,
+            6.0,
+            12.0,
+            14.0
+          ]
+        }
+      },
+      "from": [
+        4,
+        2,
+        4
+      ],
+      "to": [
+        12,
+        9.5,
+        12
+      ]
+    },
+    {
+      "faces": {
+        "down": {
+          "texture": "#table_tex_bottom"
+        },
+        "east": {
+          "texture": "#table_tex_side"
+        },
+        "north": {
+          "texture": "#table_tex_side"
+        },
+        "south": {
+          "texture": "#table_tex_side"
+        },
+        "up": {
+          "texture": "#table_tex_bottom"
+        },
+        "west": {
+          "texture": "#table_tex_side"
+        }
+      },
+      "from": [
+        2,
+        0,
+        2
+      ],
+      "to": [
+        14,
+        2,
+        14
+      ]
+    },
+    {
+      "faces": {
+        "down": {
+          "texture": "#table_tex_bottom",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            15.5
+          ]
+        },
+        "east": {
+          "texture": "#table_tex_side",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            6.0
+          ]
+        },
+        "north": {
+          "texture": "#table_tex_side",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            6.0
+          ]
+        },
+        "south": {
+          "texture": "#table_tex_side",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            6.0
+          ]
+        },
+        "up": {
+          "texture": "#table_tex_top"
+        },
+        "west": {
+          "texture": "#table_tex_side",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            6.0
+          ]
+        }
+      },
+      "from": [
+        0,
+        9.5,
+        0
+      ],
+      "to": [
+        16,
+        15.5,
+        16
+      ]
+    }
+  ],
+  "textures": {
+    "particle": "astralsorcery:block/wood_raw",
+    "table_tex_bottom": "astralsorcery:block/altar_1_bottom",
+    "table_tex_side": "astralsorcery:block/altar_1_side",
+    "table_tex_top": "astralsorcery:block/altar_1_top"
+  }
+}
