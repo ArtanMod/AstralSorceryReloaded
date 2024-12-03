@@ -1,5 +1,4 @@
-// 1.21.3	2024-12-03T21:38:26.8815868	Loot Tables
-7e0dd12340fc358d30a1f962699b2b7abcd86a60 data/astralsorcery/loot_table/blocks/altar_discovery.json
+// 1.21.3	2024-12-03T22:15:05.2348178	Loot Tables
 b082fa94041ab885622851bf0db2b04718667c8a data/astralsorcery/loot_table/blocks/marble.json
 89e8f2a41819ab25c8020221307a8e296ba43c20 data/astralsorcery/loot_table/blocks/marble_arch.json
 7472bc390947fb80371e63a01adb7e70f8342c4e data/astralsorcery/loot_table/blocks/marble_arch_slab.json
@@ -25,6 +24,7 @@ a4d642785e041c99f1deb0f244b24a373ca6804a data/astralsorcery/loot_table/blocks/ma
 2a1662635e2751dc729a2c986771d9eaa96bb2c8 data/astralsorcery/loot_table/blocks/marble_engraved_tile.json
 5233ea838dcb39c3f1c0c3de2d9ce97a8bb18f77 data/astralsorcery/loot_table/blocks/marble_engraved_vertical_slab.json
 a9aec67a1db2e3af227f1669dcaaee24cbe0fd01 data/astralsorcery/loot_table/blocks/marble_engraved_wall.json
+d813c09094cb3c85b35de98015e70048de80f738 data/astralsorcery/loot_table/blocks/marble_pillar.json
 b9c9bca0b20249b3546906bd4db58db2969eca38 data/astralsorcery/loot_table/blocks/marble_runed.json
 c8950a936d98b3e78802c69fe5b08e8d2837fb7a data/astralsorcery/loot_table/blocks/marble_runed_slab.json
 755c20f00a59fa587ef5ed0085a0ce79f4467b3f data/astralsorcery/loot_table/blocks/marble_runed_stairs.json

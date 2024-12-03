@@ -4,4 +4,5 @@ import net.minecraft.world.level.block.state.properties.EnumProperty;
 
 public class ModBlockStateProperties {
     public static final EnumProperty<VerticalSlabType> VERTICAL_SLAB_TYPE = EnumProperty.create("vertical_slab_type", VerticalSlabType.class);
+    public static final EnumProperty<PillarType> PILLAR_TYPE = EnumProperty.create("pillar_type", PillarType.class);
 }

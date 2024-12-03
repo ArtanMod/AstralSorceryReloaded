@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "pillar_type=bottom": {
+      "model": "astralsorcery:block/marble_pillar_bottom"
+    },
+    "pillar_type=middle": {
+      "model": "astralsorcery:block/marble_pillar"
+    },
+    "pillar_type=top": {
+      "model": "astralsorcery:block/marble_pillar_top"
+    }
+  }
+}

@@ -25,6 +25,7 @@ public class ModJPLanguageProvider extends LanguageProvider {
         this.add(ASBlocks.MARBLE_CHISELED.get(), "模様入り大理石");
         this.add(ASBlocks.MARBLE_ENGRAVED.get(), "彫刻された大理石");
         this.add(ASBlocks.MARBLE_RUNED.get(), "ルーンの彫られた大理石");
+        this.add(ASBlocks.MARBLE_PILLAR.get(), "大理石の柱");
         this.addStoneDecoration(ASBlocks.MARBLE_DECORATION, "大理石");
         this.addStoneDecoration(ASBlocks.MARBLE_ARCH_DECORATION, "大理石のアーチ");
         this.addStoneDecoration(ASBlocks.MARBLE_BRICKS_DECORATION, "大理石のレンガ");
