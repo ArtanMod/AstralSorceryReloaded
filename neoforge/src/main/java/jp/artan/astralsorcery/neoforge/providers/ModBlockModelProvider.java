@@ -85,8 +85,8 @@ public class ModBlockModelProvider extends BlockStateProvider {
 
         // 作業台
         BlockModelBuilder alterDiscovery = this.createAltarDiscoveryModel();
-        this.simpleBlock(ASBlocks.ALTAR_DISCOVERY.get(), alterDiscovery);
-        this.simpleBlockItem(ASBlocks.ALTAR_DISCOVERY.get(), alterDiscovery);
+        this.simpleBlock(ASBlocks.LUMINOUS_CRAFTING_TABLE.get(), alterDiscovery);
+        this.simpleBlockItem(ASBlocks.LUMINOUS_CRAFTING_TABLE.get(), alterDiscovery);
     }
 
     private void createCommonModel() {

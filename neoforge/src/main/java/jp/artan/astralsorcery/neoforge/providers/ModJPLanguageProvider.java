@@ -40,7 +40,7 @@ public class ModJPLanguageProvider extends LanguageProvider {
         this.add(ASItems.AQUAMARINE.get(), "アクアマリン");
 
         // 作業台
-        this.add(ASBlocks.ALTAR_DISCOVERY.get(), "光明の作業台");
+        this.add(ASBlocks.LUMINOUS_CRAFTING_TABLE.get(), "光明の作業台");
     }
 
     protected void addStoneDecoration(StoneDecoration decoration, String name) {

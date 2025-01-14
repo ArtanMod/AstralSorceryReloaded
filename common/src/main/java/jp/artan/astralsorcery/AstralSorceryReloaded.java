@@ -1,5 +1,6 @@
 package jp.artan.astralsorcery;
 
+import jp.artan.astralsorcery.init.ASBlockEntity;
 import jp.artan.astralsorcery.init.ASBlocks;
 import jp.artan.astralsorcery.init.ASCreativeTab;
 import jp.artan.astralsorcery.init.ASItems;
@@ -12,6 +13,7 @@ public final class AstralSorceryReloaded {
         ASCreativeTab.register();
         ASBlocks.register();
         ASItems.register();
+        ASBlockEntity.register();
     }
 
     public static void initClient() {

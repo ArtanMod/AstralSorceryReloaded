@@ -29,7 +29,7 @@ public class ASBlocks {
     }
 
     // 作業台
-    public static final RegistrySupplier<Block> ALTAR_DISCOVERY = register("altar_discovery", id -> new Block(Block.Properties.ofFullCopy(Blocks.CRAFTING_TABLE).setId(id)), ASCreativeTab.ASTRAL_SORCERY);
+    public static final RegistrySupplier<Block> LUMINOUS_CRAFTING_TABLE = register("luminous_crafting_table", id -> new Block(Block.Properties.ofFullCopy(Blocks.CRAFTING_TABLE).setId(id)), ASCreativeTab.ASTRAL_SORCERY);
 
     // 大理石
     public static final RegistrySupplier<Block> MARBLE = register("marble", id -> new Block(Block.Properties.ofFullCopy(Blocks.STONE).setId(id)), ASCreativeTab.ASTRAL_SORCERY);

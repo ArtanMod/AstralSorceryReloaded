@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "astralsorcery:altar_discovery"
+          "name": "astralsorcery:luminous_crafting_table"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "astralsorcery:blocks/altar_discovery"
+  "random_sequence": "astralsorcery:blocks/luminous_crafting_table"
 }

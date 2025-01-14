@@ -36,7 +36,6 @@ public class ModUSLanguageProvider extends LanguageProvider {
         this.add(ASBlocks.MARBLE_CHISELED.get(), "Chiseled Marble");
         this.add(ASBlocks.MARBLE_ENGRAVED.get(), "Engraved Marble");
         this.add(ASBlocks.MARBLE_RUNED.get(), "Runed Marble");
-        this.add(ASBlocks.ALTAR_DISCOVERY.get(), "Luminous Crafting Table");
     }
 
     @Override
@@ -83,7 +82,7 @@ public class ModUSLanguageProvider extends LanguageProvider {
      * @return true:除外する false:除外しない
      */
     protected boolean addToExclude(Block block) {
-        return block instanceof WallSignBlock || block instanceof WallHangingSignBlock || block == ASBlocks.MARBLE_CHISELED.get() || block == ASBlocks.MARBLE_ENGRAVED.get() || block == ASBlocks.MARBLE_RUNED.get() || block == ASBlocks.ALTAR_DISCOVERY.get();
+        return block instanceof WallSignBlock || block instanceof WallHangingSignBlock || block == ASBlocks.MARBLE_CHISELED.get() || block == ASBlocks.MARBLE_ENGRAVED.get() || block == ASBlocks.MARBLE_RUNED.get();
     }
 
     /**

@@ -1,5 +1,5 @@
-// 1.21.3	2024-12-04T00:03:52.2234691	Block States: astralsorcery
-f84b82aeb03ce1146ed9b3e5bf6eecc8027cbfd8 assets/astralsorcery/blockstates/altar_discovery.json
+// 1.21.3	2025-01-14T21:56:31.3017764	Block States: astralsorcery
+f84b82aeb03ce1146ed9b3e5bf6eecc8027cbfd8 assets/astralsorcery/blockstates/luminous_crafting_table.json
 d55b778a6e354d1352528ab8a2f428b0ba32ae39 assets/astralsorcery/blockstates/marble.json
 9830d318258d3871d3353196015c68a61199d7e0 assets/astralsorcery/blockstates/marble_arch.json
 e41fb00348e8f72b8aec3700d940c00ff9e94e32 assets/astralsorcery/blockstates/marble_arch_slab.json
@@ -218,7 +218,7 @@ bbb5f6d8cf0c8e0a27590486c01a8c98e872888c assets/astralsorcery/models/block/marbl
 e38f929196fe2dd9a646bc73b9a859970a7a9021 assets/astralsorcery/models/block/pillar.json
 dcd4d238b0cb4f996ed4a3d21c044c547f2b6e08 assets/astralsorcery/models/block/pillar_bottom.json
 329dae62750937b4115e0f684bbedab5735f4684 assets/astralsorcery/models/block/pillar_top.json
-0f42d21dc2fe8be8e819a4b7a94933a7c670e56c assets/astralsorcery/models/item/altar_discovery.json
+0f42d21dc2fe8be8e819a4b7a94933a7c670e56c assets/astralsorcery/models/item/luminous_crafting_table.json
 9a87a3c44a4aa1b2fdb375a457971fc3d2b7c299 assets/astralsorcery/models/item/marble.json
 6403fe9899b6f4c347b5d40eed9873af99aaff0b assets/astralsorcery/models/item/marble_arch.json
 78b7a1a66eeff2b26a12359f3b772b5ee479036a assets/astralsorcery/models/item/marble_arch_slab.json
