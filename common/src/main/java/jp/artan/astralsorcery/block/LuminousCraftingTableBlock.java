@@ -15,15 +15,15 @@ import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.Nullable;
 
-public class LuminousCraftingTable extends BaseEntityBlock {
-    public static final MapCodec<LuminousCraftingTable> CODEC = simpleCodec(LuminousCraftingTable::new);
+public class LuminousCraftingTableBlock extends BaseEntityBlock {
+    public static final MapCodec<LuminousCraftingTableBlock> CODEC = simpleCodec(LuminousCraftingTableBlock::new);
     private static final VoxelShape SHAPE = Shapes.or(
             Block.box(4, 2, 4, 12, 9.5f, 12),    // Pillar
             Block.box(2, 0, 2, 14, 2, 14),       // Base
             Block.box(0, 9.5f, 0, 16, 15.5f, 16) // Top
     );
 
-    public LuminousCraftingTable(Properties properties) {
+    public LuminousCraftingTableBlock(Properties properties) {
         super(properties);
     }
 
@@ -48,7 +48,7 @@ public class LuminousCraftingTable extends BaseEntityBlock {
     }
 
     @Override
-    protected MapCodec<LuminousCraftingTable> codec() {
+    protected MapCodec<LuminousCraftingTableBlock> codec() {
         return CODEC;
     }
 
